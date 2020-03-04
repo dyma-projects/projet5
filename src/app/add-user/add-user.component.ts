@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent implements OnInit {
-  @ViewChild('input', {static: false}) public el: ElementRef;
+  @ViewChild('input') public el: ElementRef;
 
   constructor(
     // il faut probablement injecter un service ici !
